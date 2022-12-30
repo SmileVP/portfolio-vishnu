@@ -1,38 +1,242 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home {
+  width: 100%;
+  background-size: cover;
+  background-color: #202124;
+  background-repeat: no-repeat;
+  background-position: center;
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navigation  */
+.navbar-collapse {
+  justify-content: flex-end;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar {
+  color: white;
+  font-weight: 500;
+}
+
+.navlist {
+  color: #808dad;
+}
+button.navbar-toggler,
+button.navbar-toggler.collapsed{
+  background-color: lightgray;
+}
+
+.navigation {
+  position: fixed;
+  background-color: #202124;
+  transition: 0.2s;
+  box-shadow: 1px 1px 1.1em yellow;
+}
+
+.me-auto {
+  margin-left: 40rem;
+  gap: 4rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Home Page design */
+.fg-theme {
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.caption-header {
+  margin-top: 10em;
+  margin-left: 5rem;
+  color: white;
+}
+
+.home-hd {
+  font-size: 2em;
+}
+.name-hd {
+  color: #04a950;
+}
+
+#home h2 {
+  font-size: 3.5em;
+}
+
+/* About page design */
+#about {
+  display: block;
+  width: 100%;
+  margin-top: 20em;
+}
+
+.about-title {
+  color: limegreen;
+  background-color: rgb(41, 40, 40);
+  border: 1px solid #04a950;
+  border-bottom-right-radius: 1em;
+  border-top-left-radius: 1em;
+}
+
+.theme-list {
+  color: white;
+}
+
+.color-white {
+  color: white;
+  margin-bottom: 3em;
+}
+
+.Images {
+  display: flex;
+  justify-content: center;
+}
+
+.color-blue {
+  color: #808dad;
+}
+
+.color-green {
+  color: #04a950;
+}
+
+.fw-normal {
+  color: #04b054;
+  background-color: rgb(41, 40, 40);
+  border: 1px solid #04a950;
+  text-align: center;
+  height: 1.5em;
+  width: 10em;
+  border-radius: 20px;
+}
+
+/* Skill page design */
+.skill-details {
+  color: #04a950;
+  background-color: rgb(41, 40, 40);
+  border: 1px solid #04a950;
+  border-bottom-right-radius: 1em;
+  border-top-left-radius: 1em;
+  font-size: 1.8em;
+  margin-top: 5em;
+}
+
+.skill-box {
+  height: 10em;
+  width: 10em;
+  background-color: rgb(41, 40, 40);
+  border: 1px solid orangered;
+  border-radius: 1em;
+  transition: height 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.skill-box:hover {
+  box-shadow: 2px 2px 1.1em lightblue;
+}
+
+.skill-img {
+  width: 7em;
+  height: 6em;
+  margin: 2px;
+}
+
+
+
+/* Project page design */
+.project-details {
+  color: #04a950;
+  background-color: rgb(41, 40, 40);
+  border: 1px solid #04a950;
+  border-bottom-right-radius: 1em;
+  border-top-left-radius: 1em;
+  font-size: 1.8em;
+  margin-top: 5em;
+}
+
+.card-box {
+  height: 25em;
+  background-color: rgb(41, 40, 40);
+  border: 1px solid orangered;
+  border-radius: 1em;
+  transition: height 2s;
+  transition-timing-function: ease-in-out;
+}
+
+.proj-hd {
+  color: #01d293;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 5px;
+  border-radius: 16px;
+}
+
+.proj-img {
+  width: 12em;
+  height: 12em;
+  margin: 2px;
+}
+
+.proj-button {
+  text-align: center;
+}
+
+.card-box:hover {
+  height: 26em;
+}
+
+.card-box:hover .proj-button {
+  display: block;
+}
+
+
+
+
+/* Contact page design*/
+.contact-hd {
+  color: #04a950;
+  background-color: rgb(41, 40, 40);
+  border: 1px solid #04a950;
+  border-bottom-right-radius: 1em;
+  border-top-left-radius: 1em;
+  font-size: 1.8em;
+  margin-top: 5em;
+}
+
+.contact-info {
+  width: 100%;
+  height: 15em;
+  margin-top: 2em;
+  background-color: rgb(41, 40, 40);
+  border: 1px solid yellow;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.mobile-details {
+  font-size: 1em;
+  color: white;
+  margin-left: 1.2em;
+}
+
+.mail-details {
+  font-size: 1em;
+  color: white;
+  margin-left: 1em;
+  margin-top: 1em;
+}
+
+.img-details {
+  width: 1.5em;
+  height: 1.5em;
+  margin: 1em;
+}
+
+.media-link img:hover {
+  box-shadow: 1px 1px 1.1em gray;
 }
