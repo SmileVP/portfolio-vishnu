@@ -1,1 +1,1 @@
-I have build my portfolio using react 
+Created my portfolio using react
